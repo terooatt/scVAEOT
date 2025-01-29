@@ -1,4 +1,4 @@
-Pipeline Overview
+
 The goal of this pipeline is to integrate two single-cell multi-omic datasets (scATAC-seq and scRNA-seq) from the same sample type. The pipeline uses a Variational Autoencoder (VAE) to learn a shared latent representation of the two modalities and then aligns the datasets using Optimal Transport (OT). Finally, the aligned data is visualized using UMAP.
 
 Pipeline Steps
@@ -50,12 +50,4 @@ Install Dependencies: Installs required Python packages (torch, numpy, umap-lear
 Run Pipeline: Executes the sc_multiomic_pipeline.py script, which performs the data integration and generates a UMAP plot.
 
 Upload UMAP Plot: Saves the UMAP plot (umap_plot.png) as a build artifact, which can be downloaded from the GitHub Actions interface.
-
-
-.
-├── .github
-│   └── workflows
-│       └── run_pipeline.yml            # GitHub Actions workflow file
-├── sc_multiomic_pipeline.py            # Python script for the pipeline
-└── README.md                           # Documentation for the repository
 
